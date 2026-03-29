@@ -1,0 +1,87 @@
+.wrap { max-width: 640px; margin: 0 auto; padding: 1rem; }
+
+.h2 { font-size: 1.35rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+.lead { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.25rem; line-height: 1.5; }
+
+.error {
+  background: rgba(196, 92, 92, 0.08);
+  border: 1px solid rgba(196, 92, 92, 0.22);
+  color: var(--danger);
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.15rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input, .ta {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.btn {
+  align-self: flex-start;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+}
+
+.upload { margin-bottom: 1.5rem; }
+
+.fileLabel {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0.5rem 0.85rem;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+}
+
+.file { display: none; }
+
+.list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.mtitle { font-weight: 650; color: var(--text); }
+.mkind { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin: 0.2rem 0; }
+.mbody { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.35rem; white-space: pre-wrap; line-height: 1.45; }
+.link { font-size: 0.88rem; color: var(--accent); display: inline-block; margin-top: 0.35rem; word-break: break-all; }
+
+.del {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: var(--danger);
+  background: rgba(196, 92, 92, 0.08);
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(196, 92, 92, 0.2);
+}

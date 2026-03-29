@@ -1,0 +1,133 @@
+.wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.35rem 1.5rem;
+  box-shadow: var(--glow);
+}
+
+.header { margin-bottom: 1rem; }
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.nextHint { font-size: 0.82rem; opacity: 0.9; }
+
+.visual {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem 0 1rem;
+}
+
+.tree {
+  width: 120px;
+  height: 140px;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.35s ease;
+}
+
+.tree::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 36px;
+  background: linear-gradient(180deg, #7a9a8a, #5a7a6a);
+  border-radius: 4px;
+}
+
+.tree::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #a8d4b8, #5a9a7a 55%, #3d6b52);
+  box-shadow: 0 4px 14px rgba(60, 100, 80, 0.25);
+}
+
+.stage0::after {
+  width: 28px;
+  height: 28px;
+  bottom: 32px;
+  opacity: 0.85;
+}
+
+.stage1::after {
+  width: 44px;
+  height: 52px;
+  bottom: 30px;
+}
+
+.stage2::after {
+  width: 58px;
+  height: 68px;
+  bottom: 28px;
+}
+
+.stage3::after {
+  width: 72px;
+  height: 88px;
+  bottom: 26px;
+}
+
+.stage4::after {
+  width: 88px;
+  height: 108px;
+  bottom: 24px;
+  background: radial-gradient(circle at 40% 30%, #b8e4c8, #6aac8a 50%, #458060);
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+  min-width: 0;
+}
+
+.stageName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.stageDesc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.barOuter {
+  height: 8px;
+  background: var(--bg2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.barInner {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-muted), var(--accent));
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+@media (max-width: 500px) {
+  .visual { flex-direction: column; }
+}

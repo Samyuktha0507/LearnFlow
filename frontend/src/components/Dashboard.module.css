@@ -1,0 +1,253 @@
+.wrap { max-width: 800px; margin: 0 auto; padding: 1.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
+
+.errorBanner {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.errorBanner p { margin-bottom: 1rem; line-height: 1.5; }
+
+.retryBtn {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.55rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: background 0.2s, transform 0.15s;
+}
+
+.retryBtn:hover { background: var(--accent-muted); transform: translateY(-1px); }
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: linear-gradient(135deg, rgba(138, 171, 156, 0.14), rgba(107, 127, 154, 0.08));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.4rem 1.5rem;
+  animation: fadeUp 0.45s ease both;
+}
+
+.bannerLeft { display: flex; align-items: center; gap: 1rem; }
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--accent-muted), rgba(107, 127, 154, 0.12));
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.bannerName { font-size: 1.22rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; }
+.bannerGoal { font-size: 0.86rem; color: var(--text-muted); margin-top: 3px; line-height: 1.4; }
+.bannerPlan { font-size: 0.78rem; color: var(--accent2); margin-top: 2px; }
+
+.globalBadge {
+  background: var(--accent-muted);
+  color: var(--accent);
+  padding: 0.38rem 0.95rem;
+  border-radius: 99px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid var(--border);
+}
+
+.motivationBox {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  box-shadow: var(--glow);
+  animation: fadeUp 0.45s ease 0.06s both;
+}
+
+.motIcon { font-size: 1rem; flex-shrink: 0; opacity: 0.7; }
+.motText { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.9rem;
+  animation: fadeUp 0.45s ease 0.1s both;
+}
+
+.statCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(44, 61, 66, 0.04);
+}
+
+.statCard:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(44, 61, 66, 0.07); }
+
+.statHighlight {
+  border-color: rgba(90, 143, 138, 0.35);
+  background: var(--bg-elevated);
+}
+
+.statEmoji { font-size: 1.35rem; opacity: 0.88; }
+
+.statVal {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--accent);
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+}
+
+.statUnit { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; }
+.statLabel { font-size: 0.76rem; color: var(--text-muted); text-align: center; }
+
+.lessonBtn {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.98rem;
+  font-weight: 600;
+  padding: 0.95rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(90, 143, 138, 0.28);
+  transition: opacity 0.2s, transform 0.2s;
+  letter-spacing: 0.02em;
+  animation: fadeUp 0.45s ease 0.14s both;
+}
+
+.lessonBtn:hover:not(:disabled) { opacity: 0.94; transform: translateY(-1px); }
+
+.lessonBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  background: var(--bg2);
+  color: var(--text-muted);
+}
+
+.chartCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.35rem;
+  box-shadow: var(--glow);
+  animation: fadeUp 0.45s ease 0.18s both;
+}
+
+.cardTitle { font-size: 0.98rem; font-weight: 650; margin-bottom: 0.85rem; color: var(--text); }
+
+.nextCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.35rem;
+  box-shadow: var(--glow);
+  animation: fadeUp 0.45s ease 0.22s both;
+}
+
+.nextList { display: flex; flex-direction: column; gap: 0.45rem; }
+
+.nextItem {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.nextNum {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.12rem 0.4rem;
+  border-radius: 6px;
+}
+
+.checkRow { display: flex; justify-content: center; }
+
+.adaptBtn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  transition: border-color 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(44, 61, 66, 0.04);
+}
+
+.adaptBtn:hover { border-color: rgba(90, 143, 138, 0.4); background: var(--accent-soft); }
+.adaptBtn:disabled { opacity: 0.5; }
+
+.interventionCard {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(90, 143, 138, 0.22);
+  border-radius: 16px;
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: fadeUp 0.45s ease both;
+}
+
+.interventionCard h3 { font-size: 0.98rem; font-weight: 700; color: var(--text); }
+.intMsg { color: var(--text-muted); font-size: 0.89rem; line-height: 1.65; }
+
+.intActions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.intActions li::before { content: '· '; color: var(--accent); font-weight: 700; }
+.intActions li { font-size: 0.86rem; color: var(--text); }
+
+.intRationale {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.loadWrap { display: flex; flex-direction: column; gap: 1rem; padding: 2rem; }
+
+.pulseBar {
+  height: 18px;
+  background: var(--bg2);
+  border-radius: 8px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 500px) {
+  .banner { flex-direction: column; align-items: flex-start; }
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+}
