@@ -2,11 +2,10 @@ services:
   - type: web
     name: learnflow-api
     runtime: python
-    buildCommand: cd backend && pip install --no-cache-dir --prefer-binary -r requirements.txt
+    runtimeVersion: 3.11.7
+    buildCommand: cd backend && pip install --no-cache-dir -r requirements.txt
     startCommand: cd backend && python main.py
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11
       - key: GEMINI_API_KEY
         sync: false
       - key: GEMINI_MODEL
